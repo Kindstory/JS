@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+
+    <h2 id="hello">안녕하세요</h2>
+    <h2 id="hi">올때죠스바</h2>
+
+    <!-- UI만드는 법:
+    1. 미리 디자인해놓고 숨김
+    2. 버튼 누르거나 하면 보여줌 -->
+
+    <div class="alert-box" id ="alert">
+        <p id="title">Alert 박스</p>
+        <button id="close"> X</button>
+    </div>
+    <button onclick="알림창1열기('아이디입력해라');">버튼1</button>
+    <button onclick="알림창1열기('비번입력해라');">버튼2</button>
+
+
+
+
+    <script>
+
+       /* function 알림창열고닫기(구멍){
+            document.getElementById('alert').style.display = 구멍;
+           
+        }
+
+        알림창열고닫기('block');
+        알림창열고닫기('none'); */
+
+       
+        function 알림창1열기(구멍){
+           // 1. 제목바꾸기
+            document.getElementById('title').innerHTML=구멍;
+            // document.getElementsByClassName('alert-box')[0]; 
+                            //class명이 alert-box인거 전부 찾음
+                            // 찾은거 여러개중 n번째꺼 찾아씀 배열인덱스로.
+            //2. 열기
+            document.getElementById('alert').style.display = 'block';
+        }
+            
+        
+        /*function 알림창2열기(){
+             document.getElementById('title').innerHTML= '비번 입력하세요';
+             document.getElementById('alert').style.display = 'block';
+         }*/
+
+        
+         document.getElementById('close').addEventListener('click', function(){
+            document.getElementById('alert').style.display ='none';
+         });
+
+
+
+
+
+
+        /* document.getElementById('hello').innerHTML = '안녕';
+         document.getElementById('hi').innerHTML = '올때폴라포';
+         document.getElementById('hello').style.color = 'orange';
+         document.getElementById('hi').style.color = 'violet';
+         document.getElementById('hello').style.fontSize = '60px';*/
+
+         // document.getElementById('???').???? = '?????'; 
+         // 이런식으로 ????만 잘채우면, 다 변경가능함.
+         // = 는 모든 프로그래밍언어에서 오른쪽껄 왼쪽에 대입. 
+         // 같다는 == 이지.
+         // 컴퓨터는 정확하게 말해야 알아들어서 다 적어줘야함.
+
+        
+         /* function 쓰는 이유
+         1. 긴 코드 축약
+         2.     
+         */
+
+         // 파라미터의 장점 : 함수하나로 다양한 기능 만들기 가능
+         // 가변적으로 데이터를 사용할 수 있음.
+        // 초보 : 함수 개 많이 만들어 놓음
+        // 고수 : 비슷한 함수들은 여러 개 만들 필요 없네
+        
+       
+
+        
+        
+
+
+
+
+
+
+
+
+        function plus(구멍){
+            2 + 구멍
+        }
+
+        plus(1); 
+
+        plus(2); 
+
+        plus(3);
+        
+
+        /*function plus2(){
+            2 + 2
+        }
+
+        function plus3(){
+            2 + 3
+        }*/
+
+
+       /* function 알림창닫기(){
+            document.getElementById('alert').style.display='none';
+        } */
+    
+        //이런식으로 JS로 조작은 밑에서 스크립트언어니까 ㅇㅇ 
+    </script>
+    
+
+</body>
+</html>

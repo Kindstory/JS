@@ -1,0 +1,79 @@
+:root{
+    scroll-behavior: auto;
+}
+
+.dark{
+    background-color: black;
+    color:white;
+}
+
+
+
+.alert-box{
+    background: blue;
+    color: red;
+    padding: 20px;
+    border-radius: 5px;
+    display: none;
+}
+
+.list-group{
+    display: none;
+}
+
+.show{
+    display: block;
+}
+
+.black-bg {
+    width : 100%;
+    height : 100%;
+    position : fixed;
+    background : rgba(0,0,0,0.5);
+    z-index : 5;
+    padding: 30px;
+    /* display: none;  */
+    visibility: hidden; /* display:none이랑 비슷한 기능 */
+    opacity: 0; 
+    /* 0은 완전히 투명 1은 불투명 0.5는 반투명 */
+    transition: all 1s;
+  }
+  .white-bg {
+    background: white;
+    border-radius: 5px;
+    padding: 30px;
+  } 
+
+ .show-modal{
+    visibility: visible; /*display: block;이랑 유사 */
+    opacity: 1;
+ }
+
+ .form-hide{
+    display: none;
+ }
+
+ .slide-container{
+    width: 300vw; /* vw : 브라우저 폭 */ 
+    transition: all 1s;
+    /*transform: translateX(-100vw);   /* margin-left보다 부드러움*/
+ }
+
+ .slide-box{
+    width: 100vw;
+    float: left;
+ }
+
+ .slide-box img{
+    width:100%;
+ }
+
+.navbar{
+    position: fixed;  /* 상단고정 */
+    width: 100%;
+    z-index: 5;
+}
+
+.navbar-brand{
+    font-size: 30px;
+}
